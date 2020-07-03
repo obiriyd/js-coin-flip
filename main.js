@@ -49,4 +49,13 @@ while (index--) {
 }
 mainElement.append(imageDiv);
 mainElement.append(stringDiv);
+//Add Button
+let resetButton = document.createElement('button');
+resetButton.setAttribute('id', 'resetButton')
+resetButton.append('Flip Again');
+mainElement.append(resetButton);
 
+//Button Event Listener
+resetButton.addEventListener('click', function(){
+    location.reload();
+});
