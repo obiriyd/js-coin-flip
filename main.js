@@ -42,8 +42,9 @@ index = 20;
 
 while (index--) {
     coin.flip();
-    //let stringItem = document.createElement('li');
-    stringList.append(coin.toString());
+    let stringItem = document.createElement('li');
+    stringItem.append(coin.toString());
+    stringList.append(stringItem)
     imageDiv.append(coin.toHTML());
 }
 mainElement.append(imageDiv);
